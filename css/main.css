@@ -2,12 +2,20 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   font-family: 'Raleway', sans-serif;
 }
 
+h1 {
+	text-align: center;
+}
+
+hr {
+color:orange;
+}
 
 /********** Logo/Branding *************/
 .logo {
@@ -33,6 +41,27 @@ body > .container {
 
 .container .text-muted {
   margin: 20px 0;
+}
+
+
+/********* About Me *******************/
+.about-me {
+	/*background-color: purple;*/
+}
+
+/********* Portfolio *******************/
+.portfolio {
+	/*background-color: pink;*/
+}
+
+/********* Resume *******************/
+.resume {
+	/*background-color: orange;*/
+}
+
+/********* Contact *******************/
+.contact {
+	/*background-color: gray;*/
 }
 
 /********** Footer *************/

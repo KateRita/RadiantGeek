@@ -20,13 +20,16 @@ color:orange;
 /********** Logo/Branding *************/
 .logo {
 	width: 50px;
+	padding: 0 0 10px 0;
 	margin: 5px;
 }
 .navbar-default .brand, .brand {
-	color: purple;
+	color: #724064;
 	font-family: 'Bad Script', cursive;
 	font-weight: bold;
 	font-size: 28px;
+	/*margin: top right bottom left*/
+	padding: 10px;
 }
 .navbar-brand>img {
 	display: inline;

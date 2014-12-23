@@ -74,6 +74,17 @@ body > .container-fluid {
 	background-color: #79A2CF;
 }
 
+.connections {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.connections > li {
+	display: inline;
+}
+
 /********** Footer *************/
 .footer {
   position: absolute;

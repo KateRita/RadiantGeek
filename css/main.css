@@ -14,7 +14,8 @@ h1 {
 }
 
 hr {
-color:orange;
+ margin: 0;
+ border-top: 5px solid #eee;
 }
 
 /********** Logo/Branding *************/
@@ -41,18 +42,21 @@ color:orange;
 }
 
 /********* container padding ***********/
-body > .container {
-  padding: 60px 15px 0;
+body > .container-fluid {
+  padding: 60px 15px 15px;
 }
 
 .container .text-muted {
   margin: 20px 0;
 }
 
+.section > .row {
+	padding: 10px;
+}
 
 /********* About Me *******************/
 .about-me {
-	/*background-color: purple;*/
+	background-color: #B8A0B2;
 }
 
 /********* Portfolio *******************/
@@ -62,12 +66,12 @@ body > .container {
 
 /********* Resume *******************/
 .resume {
-	/*background-color: orange;*/
+	background-color: #B8C188;
 }
 
-/********* Contact *******************/
-.contact {
-	/*background-color: gray;*/
+/********* Connect *******************/
+.connect {
+	background-color: #79A2CF;
 }
 
 /********** Footer *************/

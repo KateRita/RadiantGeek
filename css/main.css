@@ -5,8 +5,9 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 h1 {
@@ -43,7 +44,7 @@ hr {
 
 /********* container padding ***********/
 body > .container-fluid {
-  padding: 60px 15px 15px;
+  padding: 0 15px 15px;
 }
 
 .container .text-muted {
@@ -53,10 +54,18 @@ body > .container-fluid {
 .section > .row {
 	padding: 10px;
 }
+/********* Home ***********************/
+.container-fluid.home {
+	padding-top: 60px;
+}
 
 /********* About Me *******************/
 .about-me {
 	background-color: #B8A0B2;
+}
+
+.carousel-inner > .item {
+	height: 300px;
 }
 
 /********* Portfolio *******************/
@@ -87,7 +96,7 @@ body > .container-fluid {
 
 /********** Footer *************/
 .footer {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */

@@ -39,7 +39,8 @@
 </script>
 	</head>
 
-	<body data-spy="scroll" data-target=".navbar-list" data-offset="60px">
+	<body> <!--data-offset="60px"> -->
+		
 		<!-- Fixed navbar -->
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -71,198 +72,203 @@
 				</nav><!--/.nav-collapse -->
 				<!--      	</div> <!--row-->
 			</div><!--container-->
-		</div>
+		</div> <!-- navbar -->
 
 		<!-- Main Content Area-->
-		<div class="content container-fluid section home" id="home">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<img class="img-thumbnail avatar" alt="Radiant Geek Avatar" src="images/rgAvatar.png" />
-						<div class="brand">
-							<img class="logo" src="images/fullicon.png">Kate Reading
-						</div>
-					</div>
+		<div class="main">
+			
 
-					<div class="col-md-8">
-						<h1>Developer / Leader / Visionary</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr>
-
-		<!-- About Me -->
-		<div class="content container-fluid section about-me" id="about">
-			<div class="container">
-				<div class="row">
-					<h1>About Me</h1>
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="hover" height="500" width="500">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<div class="carousel-caption">
-									<h1>Lorem Ipsum</h1>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="carousel-caption">
-									<h1>Lorem Ipsum</h1>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="carousel-caption">
-									<h1>Lorem Ipsum</h1>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</p>
-								</div>
+			<!-- Home Section -->
+			<div class="content container-fluid section home" id="home">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-thumbnail avatar" alt="Radiant Geek Avatar" src="images/rgAvatar.png" />
+							<div class="brand">
+								<img class="logo" src="images/fullicon.png">Kate Reading
 							</div>
 						</div>
-
-						<!-- Controls -->
-						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+	
+						<div class="col-md-8">
+							<h1>Developer / Leader / Visionary</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
 					</div>
-					<!--
-					<div class="panel panel-default">
-					<div class="panel-heading">
-					<h2 class="panel-title">In my spare time</h2>
-					</div>
-					<div class="panel-body">
-					Panel content
-					</div>
-					</div>-->
 				</div>
 			</div>
-		</div>
-		<hr>
-
-		<!-- Resume -->
-		<div class="content container-fluid section resume" id="resume">
-			<div class="container">
-				<div class="row">
-					<h1>Resume</h1>
-					<h2>Technical Director, Federal Government, 2012 - Present</h2>
-					<ul>
-						<li>
-							Responsible for quality in engineering and strategic vision. Guide technical leads in agile design and development of secure communications systems and foster continuous improvement. Lead strategic planning efforts, aligning solutions with needs.
-						</li>
-						<li>
-							Represent the Office of Technical Service on the Directorate of Science & Technology Women’s Council. Mentor officers across the directorate.
-						</li>
-					</ul>
-					<h2>Projects</h2>
-					<h3>Modular System Configuration Application - Technical Lead</h3>
-					<ul>
-						<li>
-							Designed the application in C# with WPF with Entity Framework and SQL. Prioritized user stories, led system design and implementation. Ensured quality with usability testing, unit and integration testing. The product has impact across the Center affecting every customer facing deployment.
-						</li>
-					</ul>
-					<h3>Configuration Application Development Kit - Technical Lead</h3>
-					<ul>
-						<li>
-							Designed and built developer tools for configuration plugins including XAML templates, Visual Studio Templates, shared libraries, and documentation. Responsible for quality in configuration plugins across the center, lead a scrum for configuration developers.
-						</li>
-					</ul>
-					<h3>Mission Network - Technical Lead</h3>
-					<ul>
-						<li>
-							Designing deployment network and software for configuration to centralize data management.
-						</li>
-					</ul>
-					<h2>Skills</h2>
-					<ul>
-						<li>
-							<b>Languages:</b> C# (WPF), C++, Java
-						</li>
-						<li>
-							<b>Targeted Platforms:</b> Windows, Linux, Android, Symbian
-						</li>
-						<li>
-							<b>Tools:</b> Cruise Control, git, svn, Visual Studio, Eclipse, Target Process
-						</li>
-						<li>
-							<b>Development Process:</b> Agile, Scrum, Kanban, Unit Testing
-						</li>
-						<li>
-							<b>Dabbled in:</b> Ruby on Rails, Python, HTML/CSS, Javascript, php, perl, SQL Full Stack/Front End/Back End
-						</li>
-					</ul>
-					<button type="button" class="btn btn-default pull-right">
-						Download Resume
-					</button>
+			<hr>
+	
+			<!-- About Me -->
+			<div class="content container-fluid section about-me" id="about">
+				<div class="container">
+					<div class="row">
+						<h1>About Me</h1>
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="hover" height="500" width="500">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+	
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="carousel-caption">
+										<h1>Lorem Ipsum</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-caption">
+										<h1>Lorem Ipsum</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-caption">
+										<h1>Lorem Ipsum</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
+								</div>
+							</div>
+	
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+						</div>
+						<!--
+						<div class="panel panel-default">
+						<div class="panel-heading">
+						<h2 class="panel-title">In my spare time</h2>
+						</div>
+						<div class="panel-body">
+						Panel content
+						</div>
+						</div>-->
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-
-		<!-- Connect -->
-		<div class="content container-fluid section connect" id="connect">
-			<div class="container">
-				<div class="row">
-					<h1>Connect</h1>
-					<div class="col-md-4">
-						<a class="twitter-timeline" href="https://twitter.com/radiantgeek" data-widget-id="547229817876516864">Tweets by @radiantgeek</a>
-						<script>
-							! function(d, s, id) {
-								var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-								if (!d.getElementById(id)) {
-									js = d.createElement(s);
-									js.id = id;
-									js.src = p + "://platform.twitter.com/widgets.js";
-									fjs.parentNode.insertBefore(js, fjs);
-								}
-							}(document, "script", "twitter-wjs");
-						</script>
-					</div>
-					<div class="col-md-8">
-						<ul class="connections">
-							<li><img class="logo" src="images/LinkedIn.png"></img>
+			<hr>
+	
+			<!-- Resume -->
+			<div class="content container-fluid section resume" id="resume">
+				<div class="container">
+					<div class="row">
+						<h1>Resume</h1>
+						<h2>Technical Director, Federal Government, 2012 - Present</h2>
+						<ul>
+							<li>
+								Responsible for quality in engineering and strategic vision. Guide technical leads in agile design and development of secure communications systems and foster continuous improvement. Lead strategic planning efforts, aligning solutions with needs.
 							</li>
-							<li><img class="logo" src="images/Twitter-Bird.png"></img>
-							</li>
-							<li><img class="logo" src="images/Facebook.png"></img>
+							<li>
+								Represent the Office of Technical Service on the Directorate of Science & Technology Women’s Council. Mentor officers across the directorate.
 							</li>
 						</ul>
-						<form role="form" action="MAILTO:katerita@gmail.com" method="post" enctype="text/plain">
-							<div class="form-group">
-								<label for="nameInput">Name</label>
-								<input type="text" class="form-control" id="nameInput" placeholder="Enter name">
-							</div>
-							<div class="form-group">
-								<label for="emailInput">Email</label>
-								<input type="email" class="form-control" id="emailInput" placeholder="Enter email">
-							</div>
-							<div class="form-group">
-								<label for="messageInput">Message</label>
-								<textarea class="form-control" rows="3" id="messageInput" placeholder="Enter message"></textarea>
-							</div>
-							<button type="submit" class="btn btn-default">
-								Submit
-							</button>
-						</form>
+						<h2>Projects</h2>
+						<h3>Modular System Configuration Application - Technical Lead</h3>
+						<ul>
+							<li>
+								Designed the application in C# with WPF with Entity Framework and SQL. Prioritized user stories, led system design and implementation. Ensured quality with usability testing, unit and integration testing. The product has impact across the Center affecting every customer facing deployment.
+							</li>
+						</ul>
+						<h3>Configuration Application Development Kit - Technical Lead</h3>
+						<ul>
+							<li>
+								Designed and built developer tools for configuration plugins including XAML templates, Visual Studio Templates, shared libraries, and documentation. Responsible for quality in configuration plugins across the center, lead a scrum for configuration developers.
+							</li>
+						</ul>
+						<h3>Mission Network - Technical Lead</h3>
+						<ul>
+							<li>
+								Designing deployment network and software for configuration to centralize data management.
+							</li>
+						</ul>
+						<h2>Skills</h2>
+						<ul>
+							<li>
+								<b>Languages:</b> C# (WPF), C++, Java
+							</li>
+							<li>
+								<b>Targeted Platforms:</b> Windows, Linux, Android, Symbian
+							</li>
+							<li>
+								<b>Tools:</b> Cruise Control, git, svn, Visual Studio, Eclipse, Target Process
+							</li>
+							<li>
+								<b>Development Process:</b> Agile, Scrum, Kanban, Unit Testing
+							</li>
+							<li>
+								<b>Dabbled in:</b> Ruby on Rails, Python, HTML/CSS, Javascript, php, perl, SQL Full Stack/Front End/Back End
+							</li>
+						</ul>
+						<button type="button" class="btn btn-default pull-right">
+							Download Resume
+						</button>
 					</div>
 				</div>
 			</div>
-		</div>
-
+			<hr>
+	
+			<!-- Connect -->
+			<div class="content container-fluid section connect" id="connect">
+				<div class="container">
+					<div class="row">
+						<h1>Connect</h1>
+						<div class="col-md-4">
+							<a class="twitter-timeline" href="https://twitter.com/radiantgeek" data-widget-id="547229817876516864">Tweets by @radiantgeek</a>
+							<script>
+								! function(d, s, id) {
+									var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+									if (!d.getElementById(id)) {
+										js = d.createElement(s);
+										js.id = id;
+										js.src = p + "://platform.twitter.com/widgets.js";
+										fjs.parentNode.insertBefore(js, fjs);
+									}
+								}(document, "script", "twitter-wjs");
+							</script>
+						</div>
+						<div class="col-md-8">
+							<ul class="connections">
+								<li><img class="logo" src="images/LinkedIn.png"></img>
+								</li>
+								<li><img class="logo" src="images/Twitter-Bird.png"></img>
+								</li>
+								<li><img class="logo" src="images/Facebook.png"></img>
+								</li>
+							</ul>
+							<form role="form" action="MAILTO:katerita@gmail.com" method="post" enctype="text/plain">
+								<div class="form-group">
+									<label for="nameInput">Name</label>
+									<input type="text" class="form-control" id="nameInput" placeholder="Enter name">
+								</div>
+								<div class="form-group">
+									<label for="emailInput">Email</label>
+									<input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<label for="messageInput">Message</label>
+									<textarea class="form-control" rows="3" id="messageInput" placeholder="Enter message"></textarea>
+								</div>
+								<button type="submit" class="btn btn-default">
+									Submit
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- main -->
+		
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
@@ -281,6 +287,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 
 </html>

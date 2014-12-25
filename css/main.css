@@ -43,7 +43,7 @@ hr {
 }
 
 /********* container padding ***********/
-body > .container-fluid {
+.container-fluid.section {
   padding: 0 15px 15px;
 }
 
@@ -54,6 +54,7 @@ body > .container-fluid {
 .section > .row {
 	padding: 10px;
 }
+
 /********* Home ***********************/
 .container-fluid.home {
 	padding-top: 60px;

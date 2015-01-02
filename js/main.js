@@ -20,6 +20,9 @@ $(function() {
 		}, 500, "easeOutExpo", function () {
   	  		window.location.hash = href;
 	 	});
+	 	
+	 	// close the collapsed/mobile menu
+	    $('.navbar-collapse').collapse('hide');
 	});
 	
 })

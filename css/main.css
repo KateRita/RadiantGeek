@@ -44,7 +44,8 @@ hr {
 
 /********* container padding ***********/
 .container-fluid.section {
-  padding: 0 15px 15px;
+  padding: 0px 15px 15px;
+  
 }
 
 .container .text-muted {
@@ -56,7 +57,7 @@ hr {
 }
 
 /********* Home ***********************/
-.container-fluid.home {
+.container-fluid.section.home {
 	padding-top: 60px;
 }
 

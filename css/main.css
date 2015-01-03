@@ -70,6 +70,10 @@ hr {
 	height: 300px;
 }
 
+.about-list {
+	list-style-type: none;
+}
+
 /********* Portfolio *******************/
 .portfolio {
 	/*background-color: pink;*/

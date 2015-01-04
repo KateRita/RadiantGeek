@@ -61,6 +61,21 @@ hr {
 	padding-top: 60px;
 }
 
+.center {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profile .brand {
+	text-align: center;
+	
+}
+
+.profile .logo {
+	margin-right: 0;
+}
+
 /********* About Me *******************/
 .about-me {
 	background-color: #B8A0B2;

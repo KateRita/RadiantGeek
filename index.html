@@ -106,75 +106,70 @@
 				<div class="container">
 					<div class="row">
 						<h1>About Me</h1>
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="hover" height="500" width="500">
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-							</ol>
-	
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner" role="listbox">
-								<div class="item active">
-									<div class="carousel-caption">
-										<h1>I value ...</h1>
-										<ul class="about-list">
-											<li>Challenge &amp; Intellectual Stimulus</li>
-											<li>Vision, Strategy, &amp; Lofty Goals</li>
-											<li>Cohesive Culture &amp; People</li>
-											<li>Independence &amp; the Opportunity to Influence</li>
-										</ul>
-									</div>
-								</div>
-								<div class="item">
-									<div class="carousel-caption">
-										<h1>I spend a lot of time thinking about ...</h1>
-										<ul class="about-list">
-											<li>Transformational Leadership</li>
-											<li>Agile Methodoligies &amp; Continuous Improvement</li>
-											<li>User Experience</li>
-											<li>Efficiencies</li>
-										</ul>
-									</div>
-								</div>
-								<div class="item">
-									<div class="carousel-caption">
-										<h1>Outside of work I enjoy ...</h1>
-										<ul class="about-list">
-											<li>Food, especially eating it. Not so much cooking it.</li>
-											<li>Foreign Languages, Culture and Travel</li>
-											<li>Running: I’ve run 5 marathons, and I’m training for my next one!</li>
-											<li>Singing in my car with the windows down.</li>
-										</ul>
-									</div>
-								</div>
-								<div class="item">
-									<div class="carousel-caption">
-										<h1>Trivia</h1>
-										<ul class="about-list">
-											<li>I’m an ENTJ, but with my mentees I’m an F, and as long as there is a plan, I’m a P.</li>
-											<li>I went to Duke, and I camped out for tickets, but I’m a disappointment to every serious basketball fan.</li>
-											<li>I was on the cover of the New York Times Magazine when I was four.</li>
-											<li>I’m from NJ (and proud of it), but I love country music.</li>
-										</ul>
-									</div>
-								</div>
+						
+						<div class="col-md-6">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">I value...</h3>
+							  </div>
+							  <div class="panel-body">
+								<ul class="about-list">
+									<li>Challenge &amp; Intellectual Stimulus</li>
+									<li>Vision, Strategy, &amp; Lofty Goals</li>
+									<li>Cohesive Culture &amp; People</li>
+									<li>Independence &amp; the Opportunity to Influence</li>
+								</ul>
+							  </div>
 							</div>
-							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
 						</div>
-						<!--
-						<div class="panel panel-default">
-						<div class="panel-heading">
-						<h2 class="panel-title">In my spare time</h2>
+
+						<div class="col-md-6">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">I spend a lot of time thinking about ...</h3>
+							  </div>
+							  <div class="panel-body">
+								<ul class="about-list">
+									<li>Transformational Leadership</li>
+									<li>Agile Methodoligies &amp; Continuous Improvement</li>
+									<li>User Experience</li>
+									<li>Efficiencies</li>
+								</ul>
+							  </div>
+							</div>
 						</div>
-						<div class="panel-body">
-						Panel content
+						
+						<div class="col-md-6">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Outside of work I enjoy ...</h3>
+							  </div>
+							  <div class="panel-body">
+								<ul class="about-list">
+									<li>Food, especially eating it. Not so much cooking it.</li>
+									<li>Foreign Languages, Culture and Travel</li>
+									<li>Running: I’ve run 5 marathons, and I’m training for my next one!</li>
+									<li>Singing in my car with the windows down.</li>
+								</ul>
+							  </div>
+							</div>
 						</div>
-						</div>-->
+						
+						<div class="col-md-6">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Trivia</h3>
+							  </div>
+							  <div class="panel-body">
+								<ul class="about-list">
+									<li>I’m an ENTJ, but with my mentees I’m an F, and as long as there is a plan, I’m a P.</li>
+									<li>I went to Duke, and I camped out for tickets, but I’m a disappointment to every serious basketball fan.</li>
+									<li>I was on the cover of the New York Times Magazine when I was four.</li>
+									<li>I’m from NJ (and proud of it), but I love country music.</li>
+								</ul>
+							  </div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -267,7 +262,8 @@
 								<!--Instagram-->
 								<!-- <li><img class="logo" src="images/Facebook.png"></img></li> -->
 							</ul>
-							<form role="form" action="MAILTO:katerita@gmail.com" method="post" enctype="text/plain">
+							<form name="contactform" method="post" action="contact_form.php">
+							<!--form role="form" action="MAILTO:katerita@gmail.com" method="post" enctype="text/plain"-->
 								<div class="form-group">
 									<label for="nameInput">Name</label>
 									<input type="text" class="form-control" id="nameInput" placeholder="Enter name">

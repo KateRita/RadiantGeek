@@ -1,6 +1,6 @@
 <?php
  
-if(isset($_POST['email'])) {
+if(isset($_POST['emailInput'])) {
  
      
  
@@ -46,11 +46,11 @@ if(isset($_POST['email'])) {
  
      
  
-    $first_name = $_POST['nameInput']; // required
+    $nameInput = $_POST['nameInput']; // required
  
-    $email_from = $_POST['emailInput']; // required
+    $emailInput = $_POST['emailInput']; // required
  
-    $comments = $_POST['messageInput']; // required
+    $messageInput = $_POST['messageInput']; // required
  
      
  

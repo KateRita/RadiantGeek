@@ -44,8 +44,8 @@ if (isset($error)) {
 $email_content = "Name: $name\n";
 $email_content .= "Email Address: $email_address\n";
 $email_content .= "Message:\n\n$message";
-$headers = 'From: webmaster@yourdot.com' . "\r\n" .
-   			'Reply-To: webmaster@yourdot.com' . "\r\n" .
+$headers = 'From: katereading@radiantgeek.com' . "\r\n" .
+   			'Reply-To: katereading@radiantgeek.com' . "\r\n" .
    			'X-Mailer: PHP/' . phpversion();
 
 // send the email

@@ -42,19 +42,19 @@ if (isset($error)) {
 }*/
 
 // write the email content
-$email_content = "Name: $name\n";
-$email_content .= "Email Address: $email_address\n";
+$email_content = "Name: $name\n\n";
+$email_content .= "Email Address: $email_address\n\n";
 $email_content .= "Message:\n\n$message";
 
 //build headers
-	$headers = 'From: RadiantGeek katereading@radiantgeek.com' . "\r\n" ;
+	$headers = 'From: RadiantGeek <katereading@radiantgeek.com>' . "\r\n" ;
    	$headers .=	'Reply-To: ' . $email_address . "\r\n" ;
    	$headers .= 'X-Mailer: PHP/' . phpversion();
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";   
 
 // send the email
-mail ("katereading@radiantgeek.com", "New Contact Message", $email_content, $headers);
+mail ("Kate Reading <katereading@radiantgeek.com>", "RadiantGeek.com Contact Message", $email_content, $headers);
 
 
 // send the user back to the form

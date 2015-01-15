@@ -1,6 +1,3 @@
-
-  
-
 $(function() {
   
   	var offset = 50;
@@ -26,3 +23,24 @@ $(function() {
 	});
 	
 })
+
+function validateContactForm() {
+	
+	var x = document.forms["contactform"]["nameInput"].value;
+    if (x == null || x == "") {
+        alert("Please enter a name.");
+        return false;
+    }
+    
+    x = document.forms["contactform"]["emailInput"].value;
+    if (x == null || x == "") {
+        alert("Please enter an email address.");
+        return false;
+    }
+    
+    x = document.forms["contactform"]["messageInput"].value;
+    if (x == null || x == "") {
+        alert("Please enter a message.");
+        return false;
+    }
+}

@@ -262,21 +262,24 @@
 								<!--Instagram-->
 								<!-- <li><img class="logo" src="images/Facebook.png"></img></li> -->
 							</ul>
-							<form name="contactform" method="post" action="contact_form.php">
+							<form name="contactform" method="POST" action="contact_form.php">
 							<!--form role="form" action="MAILTO:katerita@gmail.com" method="post" enctype="text/plain"-->
 								<div class="form-group">
 									<label for="nameInput">Name</label>
-									<input type="text" class="form-control" id="nameInput" placeholder="Enter name">
+									<input type="text" class="form-control" name="nameInput" id="nameInput" placeholder="Enter name">
 								</div>
 								<div class="form-group">
 									<label for="emailInput">Email</label>
-									<input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+									<input type="email" class="form-control" name="emailInput" id="emailInput" placeholder="Enter email">
 								</div>
 								<div class="form-group">
 									<label for="messageInput">Message</label>
-									<textarea class="form-control" rows="3" id="messageInput" placeholder="Enter message"></textarea>
+									<textarea class="form-control" rows="5" name="messageInput" id="messageInput" placeholder="Enter message"></textarea>
 								</div>
-								<input type="submit" class="btn btn-default">Submit</input>
+								<div class="form-actions">
+									<input type="hidden" name="save" value="contact">
+									<button type="submit" class="btn btn-default" onclick="return validateContactForm()">Submit</button>
+								</div>
 							</form>
 						</div>
 					</div>

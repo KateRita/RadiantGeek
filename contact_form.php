@@ -43,7 +43,7 @@ if (isset($error)) {
 
 // write the email content
 $email_content = "<p>Name: $name";
-$email_content .= "<p>Email Address: $email_addressn";
+$email_content .= "<p>Email Address: $email_address";
 $email_content .= "<p>Message:<p>$message";
 
 //build headers

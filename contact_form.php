@@ -1,4 +1,20 @@
 <?php
+
+if (!isset($_POST['submit'])) {
+   echo "<h1>Error</h1>\n
+      <p>Accessing this page directly is not allowed.</p>";
+   exit;
+}
+
+$email = preg_replace("([\r\n])", "", $email);
+
+$find = "/(content-type|bcc:|cc:)/i";
+if (preg_match($find, $name) || preg_match($find, $email) || preg_match($find, $url) || preg_match($find, $comments)) {
+   echo "<h1>Error</h1>\n
+      <p>No meta/header injections, please.</p>";
+   exit;
+}
+
 // check for form submission – if it doesn’t exist then send back to contact form
 if (!isset($_POST["save"]) || $_POST["save"] != "contact") {
     header("Location: index.html"); exit;
@@ -32,9 +48,13 @@ if (isset($error)) {
 $email_content = "Name: $name\n";
 $email_content .= "Email Address: $email_address\n";
 $email_content .= "Message:\n\n$message";
+$headers = 'From: webmaster@yourdot.com' . "\r\n" .
+   			'Reply-To: webmaster@yourdot.com' . "\r\n" .
+   			'X-Mailer: PHP/' . phpversion();
 
 // send the email
-mail ("katereading@radiantgeek.com", "New Contact Message", $email_content);
+mail ("katereading@radiantgeek.com", "New Contact Message", $email_content, $headers);
+
 
 // send the user back to the form
 header("Location: index.html?s=".urlencode("Thank you for your message.")); exit;

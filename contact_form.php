@@ -1,11 +1,12 @@
 <?php
 
-if (!isset($_POST['submit'])) {
+if (!isset($_POST['submit'])|| $_POST["submit"] != "contact") {
    echo "<h1>Error</h1>\n
       <p>Accessing this page directly is not allowed.</p>";
    exit;
 }
 
+/*
 $email = preg_replace("([\r\n])", "", $email);
 
 $find = "/(content-type|bcc:|cc:)/i";
@@ -13,12 +14,7 @@ if (preg_match($find, $name) || preg_match($find, $email) || preg_match($find, $
    echo "<h1>Error</h1>\n
       <p>No meta/header injections, please.</p>";
    exit;
-}
-
-// check for form submission – if it doesn’t exist then send back to contact form
-if (!isset($_POST["save"]) || $_POST["save"] != "contact") {
-    header("Location: index.html"); exit;
-}
+}*/
 
 // get the posted data
 $name = $_POST["nameInput"];

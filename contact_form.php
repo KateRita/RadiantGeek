@@ -20,6 +20,11 @@ if (preg_match($find, $name) || preg_match($find, $email_address) || preg_match(
    exit;
 }
 
+if(empty($message)) {
+	exit;
+}
+
+
 /*
  * //Validating in Javascript before form submit
 // validate data input
